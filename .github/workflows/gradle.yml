@@ -25,7 +25,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: 'Get Version Number'
-      run: |
+      run: | 
         echo "::set-env name=VERSION::$(./gradlew properties -q | grep "version:" | awk '{print $2}')"
     - name: 'Publish JAR'
     - uses: actions/upload-artifact@v2
