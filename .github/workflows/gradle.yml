@@ -26,5 +26,5 @@ jobs:
       run: ./gradlew assemble
     - uses: actions/upload-artifact@v2
       with:
-        name: package.jar
+        name: 'package.jar'
         path: build/libs/*.jar
